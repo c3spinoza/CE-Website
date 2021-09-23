@@ -1,7 +1,21 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-/*#footer div {
-  background-color: black;
-  color: white;
-}*/
+#navbar{
+  background-color: #161616;
+  color: #ffffff;
+}
+#theme-toggler{
+  color: #000000;
+}
+#container{
+  background-color: #e5e5e5;
+}
+#start #portfolio #blog #contact{
+  background-color: #f7f7f7;
+}
+
+#footer div {
+  background-color: #161616;
+  color: #ffffff;
+
