@@ -1,21 +1,46 @@
-body {
+import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
+
+/*Global Styling*/
+* {
   font-family: "Roboto", sans-serif;
 }
-#navbar{
-  background-color: #161616;
-  color: #ffffff;
-}
-#theme-toggler{
-  color: #000000;
-}
-#container{
-  background-color: #e5e5e5;
-}
-#start #portfolio #blog #contact{
-  background-color: #f7f7f7;
+
+/*Body Font*/
+body{
+	background-color: #666666;
 }
 
-#footer div {
-  background-color: #161616;
-  color: #ffffff;
-
+/*Navbar and Sidebar */
+.navbar-custom {
+  background-color: #444444;
+  color: #010101;
+}
+/*Sidebar Toggler Color*/
+.navbar-toggler-icon {
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(1,1,1, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+ }
+/*Removing Border From Active Sidebar Toggler*/
+#fullNavbar button {
+   outline: none; 
+	box-shadow: none;
+}
+/*Sidebar Options*/
+#fullSidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #010101;
+  display: block;
+  transition: 0.3s;
+}
+/*Text Color Change Animation of Options*/
+#fullSidebar a:hover {
+  color: #222222;
+}
+#contact a{
+  color: #010101;
+}
+#footer{
+  background-color: #444444;
+  color: #010101;
+}
