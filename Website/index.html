@@ -15,20 +15,28 @@
 </head>
 
 <body>
-  <!--Navagation Bar-->
-  <nav class="navbar navbar-custom" id="fullNavbar">
+	 
+  <!--Navigation Bar-->
+  <nav class="navbar sticky-top navbar-expand-md navbar-custom" id="navbar">
     <div class="container-fluid">
+		 <a class="navbar-brand" href="#logo">
       <!--Personal Icon-->
-      <img src="#" alt="Logo" id="logo" />
-      <!--Opening Icon/Button-->
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#fullSidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
-			<span class="navbar-toggler-icon" ></span> 
+      <img src="CE_DesignV1.svg" alt="Logo" id="navbar-logo" />
+		<!--Name-->
+		Carlos Espinoza
+    </a>
+		<!--Theme Toggler-->
+		 <button id="theme-toggler">
+			 <span class="bi bi-sun" ></span>
 		 </button>
-      <!-- Side Bar -->
-      <div class="collapse navbar-collapse flex-column p-3 navbar-custom float-end" id="fullSidebar">
-        <!--Options of Sidebar-->
-        <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-          <li> <a href="#about-me" class="nav-link">About Me</a> </li>
+      <!--Toggler for Collapsed Navigation Bar-->
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapsed" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> 
+			<span class="navbar-toggler-icon"></span> 
+		 </button>
+      <!--Navigation Bar Options-->
+      <div class="collapse navbar-collapse flex-column p-3 navbar-custom" id="navbar-collapsed">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+          <li> <a href="#about" class="nav-link">About Me</a> </li>
           <li> <a href="#portfolio" class="nav-link">Porfolio</a> </li>
           <li> <a href="#contact" class="nav-link">Contact</a> </li>
         </ul>
@@ -37,21 +45,22 @@
   </nav>
 
   <!--Header-->
-  <div class="jumbotron jumbotron-fluid text-center" id="header">
+  <div class="jumbotron jumbotron-fluid text-center my-sm-4" id="header">
     <!--Logo-->
-    <img>
+   <img src="CE_DesignV1.svg" alt="Logo" id="logo" />
     <!--Name-->
     <h1>Carlos Espinoza</h1>
   </div>
 
   <!--Content-->
-  <div class="container-fluid">
+  <div class="container-fluid ">
+	  
     <!--About Me-->
-    <div class="row">
-      <div class="col-sm-12" id="about-me">
+    <div class="row mx-sm-2 my-sm-3">
+      <div class="col-sm-12" id="about">
         <div class="card">
           <div class="card-body">
-            <h3 class="card-title">About Me</h3>
+            <h3 class="card-title">About</h3>
             <p class="card-text">
               Some quick example text to build on the card title and make up the bulk of the card's content.
             </p>
@@ -60,8 +69,8 @@
       </div>
     </div>
 
-    <!--Section 2-->
-    <div class="row">
+    <!--Portfolio-->
+    <div class="row mx-sm-2 my-sm-3">
       <div class="col-sm-12" id="portfolio">
         <div class="card">
           <div class="card-body">
@@ -75,7 +84,7 @@
     </div>
 
     <!--Contact-->
-    <div class="row">
+    <div class="row mx-sm-2 my-sm-3">
       <div class="col-sm-12" id="contact">
         <div class="card">
           <div class="card-body">
@@ -92,7 +101,7 @@
 					<!--Mastadon Link-->
               <i class="bi bi-mastodon"></i>
               Mastodon:
-              <a href="#" style="text-decoration: none;">@...</a><br>
+              <a href="#" style="text-decoration: none;">@CarlosEspinoza@mstdn.social</a><br>
               <!--Email Link-->
               <i class="bi bi-envelope"></i>
               Email:
@@ -103,7 +112,6 @@
       </div>
     </div>
 
-  </div>
   <!--Footer-->
   <div class="row">
     <div class="col-sm-12" id="footer">
@@ -113,6 +121,7 @@
       <p>
     </div>
   </div>
+</div>
 
   <!--JS-->
   <script src="script.js"></script>
