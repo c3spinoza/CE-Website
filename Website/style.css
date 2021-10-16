@@ -1,13 +1,8 @@
 import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
 
 /*Global Styling*/
-* {
-  font-family: "Roboto", sans-serif;
-}
-
-/*Body Font*/
 body{
-	background-color: #666666;
+	font-family: "Roboto", sans-serif;
 }
 
 /*Navbar and Sidebar */
@@ -15,17 +10,29 @@ body{
   background-color: #444444;
   color: #010101;
 }
+/*Navbar Brand*/
+#navbar-logo {
+	width: 10%;
+	height: 15%;
+}
+#navbar a{
+   color: #010101;
+}
+/*Theme Toggler*/
+#theme-toggler {
+	
+}
 /*Sidebar Toggler Color*/
 .navbar-toggler-icon {
   background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(1,1,1, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
  }
 /*Removing Border From Active Sidebar Toggler*/
-#fullNavbar button {
+#navbar button {
    outline: none; 
 	box-shadow: none;
 }
 /*Sidebar Options*/
-#fullSidebar a {
+#navbar-collapsed a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 16px;
@@ -34,12 +41,28 @@ body{
   transition: 0.3s;
 }
 /*Text Color Change Animation of Options*/
-#fullSidebar a:hover {
+#navbar-collapsed a:hover {
   color: #222222;
 }
+/*Main Logo*/
+#logo {
+	width: 45%;
+	height: 50%;
+	float: center;
+}
+/*About Section*/
+#about {
+	
+}
+/*Portfolio Section*/
+#portfolio{
+	
+}
+/*Contacts Section*/
 #contact a{
   color: #010101;
 }
+/*Footer*/
 #footer{
   background-color: #444444;
   color: #010101;
