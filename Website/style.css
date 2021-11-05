@@ -1,3 +1,13 @@
+:root {
+	--light-bgcolor: #ffffff;
+	--light-fontcolor: #000000;
+	--light-fontcolor-2: #555555;
+	--dark-bgcolor: #000000;
+	--dark-fontcolor: #ffffff;
+	--dark-fontcolor-2: #aaaaaa;
+}
+
+
 import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
 
 /*Global Styling*/
@@ -7,8 +17,8 @@ body{
 
 /*Navbar and Sidebar */
 .navbar-custom {
-  background-color: #444444;
-  color: #010101;
+  background-color: var(--light-bgcolor);
+  color: var(--light-fontcolor);
 }
 /*Navbar Brand*/
 #navbar-logo {
@@ -16,11 +26,12 @@ body{
 	height: 15%;
 }
 #navbar a{
-   color: #010101;
+   color: var(--light-fontcolor);
 }
 /*Theme Toggler*/
 #theme-toggler {
-	
+	background-color: var(--light-bgcolor);
+  	color: var(--light-fontcolor);
 }
 /*Sidebar Toggler Color*/
 .navbar-toggler-icon {
@@ -36,13 +47,13 @@ body{
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 16px;
-  color: #010101;
+  color: var(--light-fontcolor);
   display: block;
   transition: 0.3s;
 }
 /*Text Color Change Animation of Options*/
 #navbar-collapsed a:hover {
-  color: #222222;
+  color: var(--light-fontcolor-2);
 }
 /*Main Logo*/
 #logo {
@@ -60,10 +71,10 @@ body{
 }
 /*Contacts Section*/
 #contact a{
-  color: #010101;
+  color: var(--light-fontcolor);
 }
 /*Footer*/
 #footer{
-  background-color: #444444;
-  color: #010101;
+  background-color: var(--light-bgcolor);
+  color: var(--light-fontcolor);
 }
