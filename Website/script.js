@@ -6,13 +6,13 @@ let screenWidth = window.screen.width;
 //Hidding Uncessary Theme Togglers
 
 while (screenWidth < 768) {
-	themeTogglerMd.style.visibility='hidden';
-	themeTogglerSm.style.visibility='visible';
+	themeTogglerMd.style.display='none';
+	themeTogglerSm.style.display='block';
 }
 
 while (screenWidth == 768 || screenWidth > 768) {
-	themeTogglerSm.style.visibility='hidden';
-	themeTogglerMd.style.visibility='visible';
+	themeTogglerSm.style.display='none';
+	themeTogglerMd.style.display='block';
 }
 
 //Swichting Icons When Theme is Changed
