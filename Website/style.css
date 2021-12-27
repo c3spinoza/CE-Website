@@ -1,12 +1,16 @@
+/*Light Theme*/
 :root {
-  --light-bgcolor: #ffffff;
-  --light-fontcolor: #000000;
-  --light-fontcolor-2: #555555;
-  --dark-bgcolor: #000000;
-  --dark-fontcolor: #ffffff;
-  --dark-fontcolor-2: #aaaaaa;
+	--light-bgcolor: #ffffff;
+	--light-fontcolor: #000000;
+	--light-fontcolor-2: #555555;
 }
 
+/*Dark Theme */
+:root {
+	--dark-bgcolor: #000000;
+	--dark-fontcolor: #ffffff;
+	--dark-fontcolor-2: #aaaaaa;
+}
 
 import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
 
