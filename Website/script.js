@@ -4,14 +4,16 @@ let themeTogglerMd = document.getElementById('theme-toggler-md');
 let screenWidth = window.screen.width
 
 //Hidding Uncessary Theme Togglers
-function hideTogglers() {
-	if (screenWidth < 767){
-    themeTogglerMd.style.display='none'
-	} else {
-    themeTogglerSm.style.display='none'
-	}
+
+while (screenWidth < 768) {
+	themeTogglerMd.style.display='none'
+	themeTogglerSm.style.display='block'
 }
 
+while (screenWidth == 768 || screenWidth > 768) {
+	themeTogglerSm.style.display='none'
+	themeTogglerMd.style.display='block'
+}
 
 //Swichting Icons When Theme is Changed
 themeTogglerSm.onclick = function(){
