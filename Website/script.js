@@ -4,7 +4,7 @@ let themeTogglerMd = document.getElementById('theme-toggler-md');
 let screenWidth = window.screen.width
 
 //Hidding Uncessary Theme Togglers
-function hideToggler  {
+function hideToggler() {
 	if (screenWidth < 768) {
 		themeTogglerMd.style.display='none';
 		themeTogglerSm.style.display='block';
