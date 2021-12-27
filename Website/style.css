@@ -1,18 +1,18 @@
 :root {
-	--light-bgcolor: #ffffff;
-	--light-fontcolor: #000000;
-	--light-fontcolor-2: #555555;
-	--dark-bgcolor: #000000;
-	--dark-fontcolor: #ffffff;
-	--dark-fontcolor-2: #aaaaaa;
+  --light-bgcolor: #ffffff;
+  --light-fontcolor: #000000;
+  --light-fontcolor-2: #555555;
+  --dark-bgcolor: #000000;
+  --dark-fontcolor: #ffffff;
+  --dark-fontcolor-2: #aaaaaa;
 }
 
 
 import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
 
 /*Global Styling*/
-body{
-	font-family: "Roboto", sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 /*Navbar and Sidebar */
@@ -22,25 +22,25 @@ body{
 }
 /*Navbar Brand*/
 #navbar-logo {
-	width: 10%;
-	height: 15%;
+  width: 10%;
+  height: 15%;
 }
-#navbar a{
-   color: var(--light-fontcolor);
+#navbar a {
+  color: var(--light-fontcolor);
 }
 /*Theme Toggler*/
 #theme-toggler {
-	background-color: var(--light-bgcolor);
-  	color: var(--light-fontcolor);
+  background-color: var(--light-bgcolor);
+  color: var(--light-fontcolor);
 }
 /*Sidebar Toggler Color*/
 .navbar-toggler-icon {
-  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(1,1,1, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
- }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(1,1,1, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 /*Removing Border From Active Sidebar Toggler*/
 #navbar button {
-   outline: none; 
-	box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 /*Sidebar Options*/
 #navbar-collapsed a {
@@ -57,24 +57,20 @@ body{
 }
 /*Main Logo*/
 #logo {
-	width: 45%;
-	height: 50%;
-	float: center;
+  width: 45%;
+  height: 50%;
+  float: center;
 }
 /*About Section*/
-#about {
-	
-}
+#about {}
 /*Portfolio Section*/
-#portfolio{
-	
-}
+#portfolio {}
 /*Contacts Section*/
-#contact a{
+#contact a {
   color: var(--light-fontcolor);
 }
 /*Footer*/
-#footer{
+#footer {
   background-color: var(--light-bgcolor);
   color: var(--light-fontcolor);
 }
