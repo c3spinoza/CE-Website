@@ -6,13 +6,13 @@ let screenWidth = window.screen.width
 //Hidding Uncessary Theme Togglers
 
 while (screenWidth < 768) {
-	themeTogglerMd.style.display='none'
-	themeTogglerSm.style.display='block'
+	themeTogglerMd.style.visibility='hidden'
+	themeTogglerSm.style.visibility='visible'
 }
 
 while (screenWidth == 768 || screenWidth > 768) {
-	themeTogglerSm.style.display='none'
-	themeTogglerMd.style.display='block'
+	themeTogglerSm.style.visibility='hidden'
+	themeTogglerMd.style.visibility='visible'
 }
 
 //Swichting Icons When Theme is Changed
