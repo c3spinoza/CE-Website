@@ -1,15 +1,13 @@
 /*Light Theme*/
-:root {
-	--light-bgcolor: #ffffff;
-	--light-fontcolor: #000000;
-	--light-fontcolor-2: #555555;
+.theme-light {
+	--bg-color: #ffffff;
+	--font-color: #000000;
 }
 
-/*Dark Theme */
-:root {
-	--dark-bgcolor: #000000;
-	--dark-fontcolor: #ffffff;
-	--dark-fontcolor-2: #aaaaaa;
+/*Dark Theme*/
+.theme-dark {
+	--bg-color: #000000;
+	--font-color: #ffffff;
 }
 
 
@@ -22,8 +20,8 @@ body {
 
 /*Navbar and Sidebar */
 .navbar-custom {
-  background-color: var(--light-bgcolor);
-  color: var(--light-fontcolor);
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 /*Navbar Brand*/
 #navbar-logo {
@@ -31,12 +29,12 @@ body {
   height: 15%;
 }
 #navbar a {
-  color: var(--light-fontcolor);
+  color: var(--font-color);
 }
 /*Theme Toggler*/
 #theme-toggler {
-  background-color: var(--light-bgcolor);
-  color: var(--light-fontcolor);
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 /*Sidebar Toggler Color*/
 .navbar-toggler-icon {
@@ -52,13 +50,13 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 16px;
-  color: var(--light-fontcolor);
+  color: var(--font-color);
   display: block;
   transition: 0.3s;
 }
 /*Text Color Change Animation of Options*/
 #navbar-collapsed a:hover {
-  color: var(--light-fontcolor-2);
+  color: var(--font-color);
 }
 /*Main Logo*/
 #logo {
@@ -72,10 +70,10 @@ body {
 #portfolio {}
 /*Contacts Section*/
 #contact a {
-  color: var(--light-fontcolor);
+  color: var(--font-color);
 }
 /*Footer*/
 #footer {
-  background-color: var(--light-bgcolor);
-  color: var(--light-fontcolor);
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
