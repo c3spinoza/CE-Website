@@ -44,19 +44,19 @@ body {
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(1,1,1, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-/*Removing Border From Active Sidebar Toggler*/
+/*Removing Border from Active Sidebar Toggler*/
 #navbar button {
   outline: none;
   box-shadow: none;
 }
 /*Sidebar Options*/
-#navbar-collapsed a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 16px;
-  color: var(--primary-font-color);
-  display: block;
-  transition: 0.3s;
+#navbar-collapsed a {	
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 16px;
+	color: var(--primary-font-color);
+	display: block;
+	transition: 0.3s;
 }
 /*Text Color Change Animation of Options*/
 #navbar-collapsed a:hover {
@@ -69,12 +69,24 @@ body {
   float: center;
 }
 /*About Section*/
-#about {}
+#about {
+	background-color: var(--secondary-color);
+	color: var(--primary-font-color);
+}
 /*Portfolio Section*/
-#portfolio {}
+#portfolio {
+	background-color: var(--secondary-color);
+	color: var(--primary-font-color);
+}
 /*Contacts Section*/
+#contact {
+	background-color: var(--secondary-color);
+	color: var(--primary-font-color);
+	text-decoration: none;
+}
 #contact a {
-  color: var(--primary-font-color);
+	color: var(--primary-font-color);
+	text-decoration: none;
 }
 /*Footer*/
 #footer {
