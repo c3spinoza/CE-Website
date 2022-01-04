@@ -1,16 +1,3 @@
-/*Light Theme*/
-.theme-light {
-	--bg-color: #ffffff;
-	--font-color: #000000;
-}
-
-/*Dark Theme*/
-.theme-dark {
-	--bg-color: #000000;
-	--font-color: #ffffff;
-}
-
-
 import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
 
 /*Global Styling*/
@@ -18,10 +5,27 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/*Light Theme*/
+.theme-light {
+	--primary-color: #ffffff;
+	--secondary-color: #b3b3b3;
+	--primary-font-color: #000000;
+	--secondary-font-color: #262626;
+}
+
+/*Dark Theme */
+.theme-dark {
+	--primary-color: #000000;
+	--secondary-color: #333333;
+	--primary-font-color: #ffffff;
+	--secondary-font-color: #d9d9d9;
+}
+
+
 /*Navbar and Sidebar */
 .navbar-custom {
-  background-color: var(--bg-color);
-  color: var(--font-color);
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
 }
 /*Navbar Brand*/
 #navbar-logo {
@@ -29,11 +33,11 @@ body {
   height: 15%;
 }
 #navbar a {
-  color: var(--font-color);
+  color: var(--primary-font-color);
 }
 /*Theme Toggler*/
 #theme-toggler {
-  background-color: var(--bg-color);
+  background-color: var(--primary-color);
   color: var(--font-color);
 }
 /*Sidebar Toggler Color*/
@@ -50,13 +54,13 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 16px;
-  color: var(--font-color);
+  color: var(--primary-font-color);
   display: block;
   transition: 0.3s;
 }
 /*Text Color Change Animation of Options*/
 #navbar-collapsed a:hover {
-  color: var(--font-color);
+  color: var(--secondary-font-color);
 }
 /*Main Logo*/
 #logo {
@@ -70,10 +74,10 @@ body {
 #portfolio {}
 /*Contacts Section*/
 #contact a {
-  color: var(--font-color);
+  color: var(--primary-font-color);
 }
 /*Footer*/
 #footer {
-  background-color: var(--bg-color);
-  color: var(--font-color);
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
 }
