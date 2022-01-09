@@ -7,18 +7,18 @@ body {
 
 /*Light Theme*/
 .theme-light {
-	--primary-color: #ffffff;
-	--secondary-color: #b3b3b3;
-	--primary-font-color: #000000;
-	--secondary-font-color: #262626;
+  --primary-color: #ffffff;
+  --secondary-color: #b3b3b3;
+  --primary-font-color: #000000;
+  --secondary-font-color: #262626;
 }
 
 /*Dark Theme */
 .theme-dark {
-	--primary-color: #000000;
-	--secondary-color: #333333;
-	--primary-font-color: #ffffff;
-	--secondary-font-color: #d9d9d9;
+  --primary-color: #000000;
+  --secondary-color: #333333;
+  --primary-font-color: #ffffff;
+  --secondary-font-color: #d9d9d9;
 }
 
 
@@ -50,13 +50,13 @@ body {
   box-shadow: none;
 }
 /*Sidebar Options*/
-#navbar-collapsed a {	
-	padding: 8px 8px 8px 32px;
-	text-decoration: none;
-	font-size: 16px;
-	color: var(--primary-font-color);
-	display: block;
-	transition: 0.3s;
+#navbar-collapsed a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--primary-font-color);
+  display: block;
+  transition: 0.3s;
 }
 /*Text Color Change Animation of Options*/
 #navbar-collapsed a:hover {
@@ -70,23 +70,23 @@ body {
 }
 /*About Section*/
 #about {
-	background-color: var(--secondary-color);
-	color: var(--primary-font-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-font-color);
 }
 /*Portfolio Section*/
 #portfolio {
-	background-color: var(--secondary-color);
-	color: var(--primary-font-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-font-color);
 }
 /*Contacts Section*/
 #contact {
-	background-color: var(--secondary-color);
-	color: var(--primary-font-color);
-	text-decoration: none;
+  background-color: var(--secondary-color);
+  color: var(--primary-font-color);
+  text-decoration: none;
 }
 #contact a {
-	color: var(--primary-font-color);
-	text-decoration: none;
+  color: var(--primary-font-color);
+  text-decoration: none;
 }
 /*Footer*/
 #footer {
