@@ -22,7 +22,7 @@ function themeChange() {
 
     //Change to Moon Icon
     themeToggler.classList.replace('bi-sun', 'bi-moon');
-    //Change Colors for Text & Backgrounds
+    //Change Color of Text & Backgrounds
     doc.classList.replace('theme-light', 'theme-dark');
     //Change Color of Logo
     navbarLogo.src = "CE_DesignV2.svg";
@@ -32,7 +32,7 @@ function themeChange() {
 
     //Change to Moon Icon
     themeToggler.classList.replace('bi-moon', 'bi-sun');
-    //Change Colors for Text & Backgrounds
+    //Change Color of Text & Backgrounds
     doc.classList.replace('theme-dark', 'theme-light');
     //Change Color of Logo
     navbarLogo.src = "CE_DesignV1.svg";
