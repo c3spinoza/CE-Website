@@ -1,14 +1,11 @@
 import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
 
-/*Global Styling*/
-body {
-  font-family: "Roboto", sans-serif;
-}
+
 
 /*Light Theme*/
 .theme-light {
   --primary-color: #ffffff;
-  --secondary-color: #b3b3b3;
+  --secondary-color: #f2f2f2;
   --primary-font-color: #000000;
   --secondary-font-color: #262626;
 }
@@ -16,11 +13,19 @@ body {
 /*Dark Theme */
 .theme-dark {
   --primary-color: #000000;
-  --secondary-color: #333333;
+  --secondary-color: #0d0d0d;
   --primary-font-color: #ffffff;
   --secondary-font-color: #d9d9d9;
 }
 
+/*Global Styling*/
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+	background-color: var(--primary-color);
+}
 
 /*Navbar and Sidebar */
 .navbar-custom {
@@ -39,6 +44,7 @@ body {
 #theme-toggler {
   background-color: var(--primary-color);
   color:  var(--primary-font-color);
+  transition: 0s;
 }
 /*Sidebar Toggler Color*/
 #navbar-toggler-icon {
@@ -64,12 +70,27 @@ body {
 #navbar-collapsed a:hover {
   color: var(--secondary-font-color);
 }
+
+
+
+/*Header*/
+#start {
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
+}
 /*Main Logo*/
 #logo {
   width: 45%;
   height: 50%;
-  float: center;
 }
+
+
+
+/*Content*/
+#content {
+	background-color: var(--primary-color);
+}
+
 /*About Section*/
 #about {
   background-color: var(--secondary-color);
@@ -84,14 +105,17 @@ body {
 #contact {
   background-color: var(--secondary-color);
   color: var(--primary-font-color);
-  text-decoration: none;
+  
 }
 #contact a {
   color: var(--primary-font-color);
   text-decoration: none;
 }
+
+
+
 /*Footer*/
 #footer {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: var(--primary-font-color);
 }
