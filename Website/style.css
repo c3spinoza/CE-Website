@@ -1,7 +1,5 @@
 import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
 
-
-
 /*Light Theme*/
 .theme-light {
   --primary-color: #ffffff;
@@ -45,16 +43,15 @@ body {
   background-color: var(--primary-color);
   color:  var(--primary-font-color);
   transition: 0s;
+	outline: none;
+  box-shadow: none;
 }
 /*Sidebar Toggler Color*/
 #navbar-toggler-icon {
   font-size: 28px;
   background-color: var(--primary-color);
   color:  var(--primary-font-color);
-}
-/*Removing Border from Active Sidebar Toggler*/
-#navbar button {
-  outline: none;
+	outline: none;
   box-shadow: none;
 }
 /*Sidebar Options*/
@@ -80,8 +77,8 @@ body {
 }
 /*Main Logo*/
 #logo {
-  width: 45%;
-  height: 50%;
+  width: 65%;
+  height: 70%;
 }
 
 
@@ -90,26 +87,16 @@ body {
 #content {
 	background-color: var(--primary-color);
 }
-
-/*About Section*/
-#about {
+.card div {
   background-color: var(--secondary-color);
   color: var(--primary-font-color);
 }
-/*Portfolio Section*/
-#portfolio {
-  background-color: var(--secondary-color);
-  color: var(--primary-font-color);
-}
-/*Contacts Section*/
-#contact {
-  background-color: var(--secondary-color);
-  color: var(--primary-font-color);
-  
-}
-#contact a {
+.card-body a {
   color: var(--primary-font-color);
   text-decoration: none;
+}
+.card-body a:hover {
+  color: var(--secondary-font-color);
 }
 
 
@@ -118,4 +105,11 @@ body {
 #footer {
   background-color: var(--secondary-color);
   color: var(--primary-font-color);
+}
+#footer a {
+  color: var(--primary-font-color);
+  text-decoration: none;
+}
+#footer a:hover {
+  color: var(--secondary-font-color);
 }
