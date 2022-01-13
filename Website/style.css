@@ -1,18 +1,19 @@
-import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
-
 /*Light Theme*/
 .theme-light {
-  --primary-color: #ffffff;
+  --primary-color: #f8f8f8;
   --secondary-color: #f2f2f2;
+	--tertiary-color: #dddddd;
   --primary-font-color: #000000;
   --secondary-font-color: #262626;
+	--border-color: ;
 }
 
 /*Dark Theme */
 .theme-dark {
   --primary-color: #000000;
-  --secondary-color: #0d0d0d;
-  --primary-font-color: #ffffff;
+  --secondary-color: #1a1a1a;
+	--tertiary-color: #222222;
+  --primary-font-color: #f8f8f8;
   --secondary-font-color: #d9d9d9;
 }
 
@@ -21,13 +22,13 @@ body {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
-  font-family: "Roboto", sans-serif;
+  font-family: sans-serif;
 	background-color: var(--primary-color);
 }
 
-/*Navbar and Sidebar */
+/*Navbar*/
 .navbar-custom {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color); 
   color: var(--primary-font-color);
 }
 /*Navbar Brand*/
@@ -87,6 +88,9 @@ body {
 #content {
 	background-color: var(--primary-color);
 }
+#content div {
+	border-color: var(--tertiary-color);
+}
 .card div {
   background-color: var(--secondary-color);
   color: var(--primary-font-color);
@@ -107,6 +111,7 @@ body {
   color: var(--primary-font-color);
 }
 #footer a {
+	font-size: 16px;
   color: var(--primary-font-color);
   text-decoration: none;
 }
