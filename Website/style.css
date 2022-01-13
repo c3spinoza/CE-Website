@@ -1,27 +1,35 @@
 /*Light Theme*/
 .theme-light {
-	--bg-color: #ffffff;
-	--font-color: #000000;
+  --primary-color: #f8f8f8;
+  --secondary-color: #f2f2f2;
+  --tertiary-color: #dddddd;
+  --primary-font-color: #000000;
+  --secondary-font-color: #262626;
+  --border-color:;
 }
 
-/*Dark Theme*/
+/*Dark Theme */
 .theme-dark {
-	--bg-color: #000000;
-	--font-color: #ffffff;
+  --primary-color: #000000;
+  --secondary-color: #1a1a1a;
+  --tertiary-color: #222222;
+  --primary-font-color: #f8f8f8;
+  --secondary-font-color: #d9d9d9;
 }
-
-
-import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
 
 /*Global Styling*/
 body {
-  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: sans-serif;
+  background-color: var(--primary-color);
 }
 
-/*Navbar and Sidebar */
+/*Navbar*/
 .navbar-custom {
-  background-color: var(--bg-color);
-  color: var(--font-color);
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
 }
 /*Navbar Brand*/
 #navbar-logo {
@@ -29,19 +37,21 @@ body {
   height: 15%;
 }
 #navbar a {
-  color: var(--font-color);
+  color: var(--primary-font-color);
 }
 /*Theme Toggler*/
 #theme-toggler {
-  background-color: var(--bg-color);
-  color: var(--font-color);
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
+  transition: 0s;
+  outline: none;
+  box-shadow: none;
 }
 /*Sidebar Toggler Color*/
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(1,1,1, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-/*Removing Border From Active Sidebar Toggler*/
-#navbar button {
+#navbar-toggler-icon {
+  font-size: 28px;
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
   outline: none;
   box-shadow: none;
 }
@@ -50,30 +60,61 @@ body {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 16px;
-  color: var(--font-color);
+  color: var(--primary-font-color);
   display: block;
   transition: 0.3s;
 }
 /*Text Color Change Animation of Options*/
 #navbar-collapsed a:hover {
-  color: var(--font-color);
+  color: var(--secondary-font-color);
+}
+
+
+
+/*Header*/
+#start {
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
 }
 /*Main Logo*/
 #logo {
-  width: 45%;
-  height: 50%;
-  float: center;
+  width: 65%;
+  height: 70%;
 }
-/*About Section*/
-#about {}
-/*Portfolio Section*/
-#portfolio {}
-/*Contacts Section*/
-#contact a {
-  color: var(--font-color);
+
+
+
+/*Content*/
+#content {
+  background-color: var(--primary-color);
 }
+#content div {
+  border-color: var(--tertiary-color);
+}
+.card div {
+  background-color: var(--secondary-color);
+  color: var(--primary-font-color);
+}
+.card-body a {
+  color: var(--primary-font-color);
+  text-decoration: none;
+}
+.card-body a:hover {
+  color: var(--secondary-font-color);
+}
+
+
+
 /*Footer*/
 #footer {
-  background-color: var(--bg-color);
-  color: var(--font-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-font-color);
+}
+#footer a {
+  font-size: 16px;
+  color: var(--primary-font-color);
+  text-decoration: none;
+}
+#footer a:hover {
+  color: var(--secondary-font-color);
 }
